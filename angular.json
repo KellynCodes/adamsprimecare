@@ -52,17 +52,17 @@
               "src/assets/vendor/boxicons/css/boxicons.min.css",
               "src/assets/vendor/bootstrap-icons/bootstrap-icons.css",
               "src/assets/vendor/bootstrap/css/bootstrap.min.css",
-              "../node_modules/ngx-toastr/toastr.css",
-              "../node_modules/slick-carousel/slick/slick.scss",
-              "../node_modules/slick-carousel/slick/slick-theme.scss",
+              "node_modules/ngx-toastr/toastr.css",
+              "node_modules/slick-carousel/slick/slick.scss",
+              "node_modules/slick-carousel/slick/slick-theme.scss",
               "src/assets/vendor/aos/aos.css"
             ],
             "scripts": [
               "src/assets/js/main.js",
               "src/assets/vendor/aos/aos.js",
               "src/assets/vendor/bootstrap/js/bootstrap.bundle.min.js",
-              "../node_modules/jquery/dist/jquery.min.js",
-              "../node_modules/slick-carousel/slick/slick.min.js"
+              "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/slick-carousel/slick/slick.min.js"
             ]
           },
           "configurations": {
