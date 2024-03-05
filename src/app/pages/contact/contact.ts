@@ -1,6 +1,12 @@
 import { HttpStatusCode } from '@angular/common/http';
 import { Component, signal } from '@angular/core';
-import { FormGroup, FormBuilder, FormsModule, Validators, ReactiveFormsModule } from '@angular/forms';
+import {
+  FormGroup,
+  FormBuilder,
+  FormsModule,
+  Validators,
+  ReactiveFormsModule,
+} from '@angular/forms';
 import { ToastrService } from 'ngx-toastr';
 import emailJs from '@emailjs/browser';
 
@@ -11,7 +17,7 @@ import emailJs from '@emailjs/browser';
   templateUrl: './contact.html',
   styles: `.contact{
     margin-top: 5rem;
-  }`
+  }`,
 })
 export class Contact {
   public contactForm: FormGroup;
@@ -23,7 +29,14 @@ export class Contact {
       email: ['', [Validators.required, Validators.email]],
       phone: ['', [Validators.pattern('^\\+(?:[0-9] ?){6,14}[0-9]$')]],
       date: [new Date().toDateString(), Validators.required],
-      message: ['', Validators.required, Validators.minLength(10), Validators.maxLength(5000)],
+      message: [
+        '',
+        [
+          Validators.required,
+          Validators.minLength(10),
+          Validators.maxLength(10000),
+        ],
+      ],
     });
   }
 
