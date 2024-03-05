@@ -593,11 +593,11 @@ section {
 # About
 --------------------------------------------------------------*/
 .about .content h2 {
-  font-weight: 700;
-  font-size: 48px;
-  line-height: 60px;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 40px;
   margin-bottom: 20px;
-  text-transform: uppercase;
+  text-transform: capitalize;
 }
 
 .about .content h3 {

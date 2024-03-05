@@ -14,7 +14,7 @@ import { RouterLink } from '@angular/router';
         data-aos-delay="200"
       >
         <h1>Adams Primary Care.</h1>
-        <h2>Nursing (Nurse Practitioner), Family Medicine.</h2>
+        <h2>We specialize in Nursing (Nurse Practitioner)  and Family Medicine.</h2>
         <a routerLink="/" fragment="about" class="btn-get-started scrollto"
           >Get Started</a
         >
@@ -22,7 +22,5 @@ import { RouterLink } from '@angular/router';
     </section>
     <!-- End Hero -->
   `,
-  styles: `
-`,
 })
 export class Hero {}

@@ -40,21 +40,21 @@ export class Testimonials {
     {
       Id: 'aie0qfkfls-r3-r30f',
       name: 'Jennifer Barnes',
-      occupation: ' Graphic Designer',
+      occupation: 'Lawyer',
       message:
         'The team at Adams Primary Care is amazing! They are always friendly, caring, and attentive to my needs. I feel confident knowing that I am in good hands whenever I visit.',
     },
     {
       Id: 'aie0qf504-3084-7ofakf',
       name: 'Michael Nguyen',
-      occupation: ' Software Engineer',
+      occupation: 'Farmer',
       message:
         "I've been a patient at Adams Primary Care for years, and I couldn't be happier with the level of care I receive. The doctors and staff truly go above and beyond to make sure I am well taken care of.",
     },
     {
       Id: 'aie09ew-fiwewefl-7ofakf',
       name: 'Emily Parker',
-      occupation: 'Human Resources Manager',
+      occupation: 'Professional boxer',
       message:
         'I highly recommend Adams Primary Care to anyone in need of quality healthcare services. The staff is professional, knowledgeable, and genuinely cares about the well-being of their patients.',
     },
