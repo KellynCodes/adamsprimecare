@@ -6,7 +6,8 @@
         <div class="section-title">
           <h2>Contact</h2>
           <p>
-            Engage with Adams Primary Care - Your Gateway to Exceptional Healthcare Services
+            Engage with Adams Primary Care - Your Gateway to Exceptional
+            Healthcare Services
           </p>
         </div>
       </div>
@@ -21,27 +22,27 @@
         <div class="info mt-4">
           <i class="bi bi-geo-alt"></i>
           <h4>Location:</h4>
-          <p>A108 Adam Street, New York, NY 535022</p>
+          <p>ADAMS PRIMARY CARE, PC- 25 NOMORA DRIVE, DANIELSVILLE, GA 30633</p>
         </div>
         <div class="row">
           <div class="col-lg-6 mt-4">
             <div class="info">
               <i class="bi bi-envelope"></i>
               <h4>Email:</h4>
-              <p>info&commat;example.com</p>
+              <p>info&commat;adpcarepc.com</p>
             </div>
           </div>
           <div class="col-lg-6">
             <div class="info w-100 mt-4">
               <i class="bi bi-phone"></i>
-              <h4>Call:</h4>
-              <p>+1 5589 55488 55s</p>
+              <h4></h4>
+              <p></p>
             </div>
           </div>
         </div>
 
         <form
-        [formGroup]="contactForm"
+          [formGroup]="contactForm"
           (ngSubmit)="onSubmit()"
           class="php-email-form mt-4"
         >
@@ -52,12 +53,11 @@
                 name="name"
                 class="form-control"
                 id="name"
-              formControlName="name"
-
+                formControlName="name"
                 placeholder="Your Name"
                 required
               />
-               @if(contactForm.touched &&
+              @if(contactForm.touched &&
               contactForm.controls['name'].hasError('required') ){
               <p class="text-danger">Name is required.</p>
               }
@@ -67,16 +67,15 @@
                 type="email"
                 class="form-control"
                 name="email"
-              formControlName="email"
+                formControlName="email"
                 id="email"
                 placeholder="Your Email"
                 required
               />
-                 @if(contactForm.touched &&
+              @if(contactForm.touched &&
               contactForm.controls['name'].hasError('required') ){
               <p class="text-danger">Name is required.</p>
-              }
-                 @if(contactForm.touched &&
+              } @if(contactForm.touched &&
               contactForm.controls['email'].hasError('email') ){
               <p class="text-danger">Invalid email address.</p>
               }
@@ -92,10 +91,10 @@
               placeholder="Your Phone Number"
               required
             />
-                 @if(contactForm.touched &&
-              contactForm.controls['phone'].hasError('pattern') ){
-              <p class="text-danger">Invalid phone number.</p>
-              }
+            @if(contactForm.touched &&
+            contactForm.controls['phone'].hasError('pattern') ){
+            <p class="text-danger">Invalid phone number.</p>
+            }
           </div>
           <div class="form-group mt-3">
             <textarea
@@ -106,23 +105,26 @@
               placeholder="Message"
               required
             ></textarea>
-                @if(contactForm.touched &&
-              contactForm.controls['message'].hasError('required') ){
-              <p class="text-danger">Message is required.</p>
-              }
-                    @if(contactForm.touched &&
-              contactForm.controls['message'].hasError('minlength') ){
-              <p class="text-danger">Message should not be less than 10 characters.</p>
-              }
-                    @if(contactForm.touched &&
-              contactForm.controls['message'].hasError('maxlength') ){
-              <p class="text-danger">Message should not be greater than 10000 characters.</p>
-              }
+            @if(contactForm.touched &&
+            contactForm.controls['message'].hasError('required') ){
+            <p class="text-danger">Message is required.</p>
+            } @if(contactForm.touched &&
+            contactForm.controls['message'].hasError('minlength') ){
+            <p class="text-danger">
+              Message should not be less than 10 characters.
+            </p>
+            } @if(contactForm.touched &&
+            contactForm.controls['message'].hasError('maxlength') ){
+            <p class="text-danger">
+              Message should not be greater than 10000 characters.
+            </p>
+            }
           </div>
-       
+
           <div class="text-center">
-            <button type="submit"  [disabled]="isSending()">
-              {{isSending() ? "Sending..." : "Send Message"}}</button>
+            <button type="submit" [disabled]="isSending()">
+              {{isSending() ? "Sending..." : "Send Message"}}
+            </button>
           </div>
         </form>
       </div>
